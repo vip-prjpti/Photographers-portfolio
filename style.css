@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('photopix/banner1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    width: 100%;
+    height: 6rem;
+    background: white;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    border-bottom: 0.4rem solid rgb(246, 92, 26);
+    padding: 0rem 6rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.logo{
+    font-size: 2.5rem;
+}
+
+.logo span{
+    color: rgb(246, 92, 26)
+}
+
+.menu a{
+    color: #000;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    transition: all ease-in 0.1s;
+}
+
+.menu a:first-child{
+    color: rgb(246, 92, 26)
+}
+
+.menu a:hover{
+    color: rgb(246, 92, 26)
+}
+
+.icon i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.icon i:hover{
+    color: rgb(246, 92, 26)
+}
+.icon a{
+    font-size: 1.5rem;
+    /* background: #e74; */
+    background: rgb(246, 92, 26);
+    color: #fff;
+    padding: 1rem 2rem;
+    margin-left: 3rem;
+    border-radius: 0.5rem;
+}
+
+.h-text{
+    color: #fff;
+    max-width: 70rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#camera{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    /* color: rgb(246, 92, 26); */
+}
+
+.h-text h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+    padding: 0 0 3rem 0;
+    
+}
+
+.h-text input{
+    width: 60%;
+    padding: 2rem;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 0.8rem ;
+}
+
+.h-text button{
+    width: 30%;
+    padding: 2rem;
+    background: rgb(246, 92, 26);
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0.8rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.container{
+    padding: 10rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem auto;
+}
+
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.container ul li{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.container ul li:hover{
+    color: #fff;
+    background: rgb(246, 92, 26);
+    border-radius: 1rem;
+}
+
+li.active{
+    color: #fff;
+    background: rgb(246, 92, 26);
+    border-radius: 1rem;
+}
+
+.gallery-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item .item{
+    position: relative;
+   width: 30rem;
+   height: 30rem;
+   /* float: left; */
+   margin: 0.5rem;
+   display: block;
+}
+
+.gallery-item .item img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.member{
+    width: 100%;
+    padding: 20px 100px;
+    font-family: sans-serif;
+}
+
+.member-info{
+    text-align: center;
+}
+
+.member-info p{
+    font-size: 1.6rem
+}
+
+.member-info h1{
+    font-size: 4rem;
+}
+
+.member-info h1 span{
+    color: rgb(246, 92, 26);
+}
+
+.member-card{
+    text-align: center;
+    padding-top: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.member-card p{
+    margin: 20px 0;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+.member-card h2{
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+.m-images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.m-images img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.m-images img:hover{
+    transform: scale(1.2); 
+}
+
+footer{
+    width: 100%;
+    background: #262626;
+    padding: 5rem 10rem;
+}
+
+.newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.newsletter >div{
+    flex-basis: 50%;
+}
+
+.ntext{
+    text-align: right;
+}
+
+.newsletter h2{
+    font-size: 3.2rem;
+    font-family: sans-serif;
+}
+.newsletter p{
+    font-size: 2rem;
+}
+
+.newsletter label{
+    position: relative;
+}
+
+.newsletter input{
+    padding: 2rem;
+    width: 70%;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.newsletter button{
+    position: absolute;
+    right: 0;
+    padding: 2rem;
+    width: 30%;
+    background: rgb(246, 92, 26);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.f-contact{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.8rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.f-contact>div{
+    flex-basis: 20%;
+}
+
+.f-contact p{
+    line-height: 3.2rem;
+    font-size: 2rem;
+    color: grey;
+    cursor: pointer;
+}
+.f-contact p:hover{
+    color: #fff;
+}
+
+.f-contact i{
+    background: white;
+    color:#000;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 2rem 0.5rem;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.f-contact i:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.container .gallery-item .item.show{
+    animation: show .5s ease 0s 1 forwards;
+    transform-origin: center;
+}
+.container .gallery-item .item.hide{
+    animation: hide .5s ease 0s 1 forwards;
+    transform-origin: center;
+}
+
+@keyframes hide {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+}
+@keyframes show {
+    0%{
+      
+        transform: scale(0);
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    100%{
+        transform: scale(1);
+       
+    }
+}
+
+@media(max-width: 468px){
+    .product .itembox {
+        width: 320px;
+        height: 250px;
+    }
+}

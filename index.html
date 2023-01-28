@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoPix</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Photo<span>pi</span>X</div>
+        <div class="menu">
+          <a href="Home">Home</a>
+          <a href="About">About</a>
+          <a href="Gallery">Gallery</a>
+          <a href="Contact">Contact</a>
+        </div>
+        <div class="icon">
+          <i class="fa fa-search"></i>
+          <a href="#">Login</a>
+        </div>
+      </nav>
+
+      <section class="h-text">
+        <i class="fa fa-camera" id="camera"></i>
+        <h1 data-aos="fade-up">Capturing the moments that captivate your heart.</h1>
+        <input type="text" name="" id="" placeholder="Search here..." />
+        <button><i class="fa fa-search"></i></button>
+      </section>
+    </header>
+
+    <section class="container">
+      <ul class="gallery">
+        <li class="filter active" data-filter="all">All</li>
+        <li class="filter" data-filter="nature">Nature</li>
+        <li class="filter" data-filter="fashion">Fashion</li>
+        <li class="filter" data-filter="wedding">Wedding</li>
+      </ul>
+
+      <div class="gallery-item">
+        <div class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+          <img src="./photopix/p1.jpg" data-item="nature" alt="p1" />
+        </div>
+        <div class="item fashion" data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+          <img src="./photopix/p2.jpg" data-item="fashion" alt="p2" />
+        </div>
+        <div class="item wedding" data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+          <img src="./photopix/p3.jpg" data-item="wedding" alt="p3" />
+        </div>
+        <div class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="400">
+          <img src="./photopix/p4.jpg" data-item="nature" alt="p4" />
+        </div>
+        <div class="item fashion" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="500">
+          <img src="./photopix/p5.jpg" data-item="fashion" alt="p5" />
+        </div>
+        <div class="item wedding" data-aos="flip-left" data-aos-offset="100" data-aos-delay="600">
+          <img src="./photopix/p6.jpg" data-item="wedding" alt="p6" />
+        </div>
+        <div class="item nature" data-aos="flip-left" data-aos-offset="100" data-aos-delay="700">
+          <img src="./photopix/p7.jpg" data-item="nature" alt="p7" />
+        </div>
+        <div class="item wedding" data-aos="flip-left" data-aos-offset="100" data-aos-delay="800">
+          <img src="./photopix/p8.jpg" data-item="wedding" alt="p8" />
+        </div>
+        <div class="item wedding" data-aos="flip-left" data-aos-offset="100" data-aos-delay="900">
+          <img src="./photopix/p9.jpg" data-item="wedding" alt="p9" />
+        </div>
+      </div>
+    </section>
+
+    <section class="member">
+      <div class="member-info" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="200">
+        <h1>Our <span>Informations</span></h1>
+        <p>What are member says</p>
+      </div>
+      <div class="member-card" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="200">
+        <img src="./photopix/member.png" alt="member" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum
+          soluta, consectetur inventore iusto, sed autem, alias rem vitae velit
+          veritatis voluptatem eligendi voluptatibus reiciendis voluptatum
+          tenetur magnam perspiciatis ab.
+        </p>
+        <h2>John Wick</h2>
+        <img src="./photopix/icon1.png" width="100" alt="" />
+        <img src="./photopix/icon2.png" width="100" alt="" />
+        <img src="./photopix/icon3.png" width="100" alt="" />
+        <img src="./photopix/icon4.png" width="100" alt="" />
+      </div>
+
+      <div class="m-images" data-aos="zoom-in-up" data-aos-offset="200">
+        <img src="./photopix/s1.jpg" alt="" />
+        <img src="./photopix/s2.jpg" alt="" />
+        <img src="./photopix/s3.jpg" alt="" />
+        <img src="./photopix/s4.jpg" alt="" />
+        <img src="./photopix/s5.jpg" alt="" />
+        <img src="./photopix/s6.jpg" alt="" />
+      </div>
+    </section>
+
+<footer>
+  <div class="newsletter">
+    <div data-aos="zoom-in-up" data-aos-offset="200">
+      <h2>Subscribe our newsletter</h2>
+      <p>We're a team of non-cynics who truly care for our work.</p>
+    </div>
+    <div class="ntext" data-aos="fade-up-right" data-aos-offset="200">
+      <label for="">
+        <input type="text" name="" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </label>
+    </div>
+  </div>
+  <div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+    <div>
+      <h1>Information</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, reprehenderit?</p>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-telegram"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+    <div>
+      <h1>Useful links</h1>
+      <p>About Us</p>
+      <p>Gallery</p>
+      <p>Blog Posts</p>
+      <p>Pricing Plans</p>
+    </div>
+    <div>
+      <h1>Useful links</h1>
+      <p>About Us</p>
+      <p>About Us</p>
+      <p>About Us</p>
+      <p>About Us</p>
+    </div>
+    <div>
+      <h1>Help & Support</h1>
+      <p>Privacy Policy</p>
+      <p>Terms & Conditions</p>
+      <p>Technical Support</p>
+      <p>Customer Care</p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  </body>
+</html>
